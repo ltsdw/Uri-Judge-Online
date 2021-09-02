@@ -1,11 +1,19 @@
 '''
-title: Teste de Seleção 1
-number of the problem: 1035
-date: 02/03/2018
+title: Flores de Fogo
+number of the problem: 1039
+date: 30/03/2018
 author: ltsdw
 '''
 
-A, B, C, D = map(int, input('').split())
+from math import sqrt
 
-if B > C and D > A and C + D > A + B and C > 0 and D > 0 and A % 2 == 0: print('Valores aceitos')
-else: print('Valores nao aceitos')
+while True:
+    try:
+        r1, x1, y1, r2, x2, y2 = map(int, input().split())
+        d = sqrt(pow(x2-x1, 2)+pow(y2-y1, 2))+r2
+        if r1 >= d:
+            print('RICO')
+        else:
+            print('MORTO')
+    except EOFError:
+        break

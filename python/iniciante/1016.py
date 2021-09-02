@@ -1,7 +1,7 @@
 '''
-title: Imposto de Renda
-number of the problem: 1051
-date: 05/03/2018
+title: Distância
+number of the problem: 1016
+date: 28/02/2018
 author: ltsdw
 '''
 
