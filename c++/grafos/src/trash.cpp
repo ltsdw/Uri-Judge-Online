@@ -49,8 +49,8 @@ class Graph
         {
             using std::vector, std::pair, std::cin;
 
-            //adjacencies = (vector<pair<Node, Eta>>*) malloc(sizeof(vector<pair<Node, Eta>>) * n_nodes);
-            adjacencies = new vector<pair<Node, Eta>>[n_nodes];
+            adjacencies = (vector<pair<Node, Eta>>*) malloc(sizeof *adjacencies * n_nodes);
+            //adjacencies = new vector<pair<Node, Eta>>[n_nodes];
 
             int x, y, h;
 
